@@ -2,7 +2,7 @@
 Labour work #1
 Count frequencies dictionary by the given arbitrary text
 """
-
+а = (text)
 
 def calculate_frequences(text: str) -> dict:
     """
