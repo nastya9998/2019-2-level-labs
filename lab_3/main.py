@@ -12,7 +12,7 @@ if __name__ == '__main__':
 
 
 class WordStorage:
-     def __init__(self):
+    def __init__(self):
         self.storage = {}
 
     def put(self, word: str) -> int:
@@ -45,10 +45,9 @@ class WordStorage:
             return {}
         for word in corpus:
             self.storage[word] = self.put(word)
-        #вызывает путAnn
 
 class NGramTrie:
-        def __init__(self, n):
+    def __init__(self, n):
         self.gram_frequencies = {}
         self.gram_log_probabilities = {}
         self.size = n
