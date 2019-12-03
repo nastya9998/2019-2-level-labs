@@ -116,7 +116,7 @@ def encode(storage_instance, corpus) -> list:
 
 
 def split_by_sentence(text: str) -> list:
-        if not isinstance(text, str) or not text:
+    if not isinstance(text, str) or not text:
         return []
     text = text.lower()
     text = text.replace('\n', '')
