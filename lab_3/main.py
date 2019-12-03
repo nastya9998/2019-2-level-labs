@@ -12,7 +12,7 @@ if __name__ == '__main__':
 
 
 class WordStorage:
-        def __init__(self):
+    def __init__(self):
         self.storage = {}
 
     def put(self, word: str) -> int:
@@ -46,8 +46,9 @@ class WordStorage:
         for word in corpus:
             self.storage[word] = self.put(word)
 
+
 class NGramTrie:
-        def __init__(self, n):
+    def __init__(self, n):
         self.gram_frequencies = {}
         self.gram_log_probabilities = {}
         self.size = n
@@ -102,6 +103,7 @@ class NGramTrie:
             prefix = pro[0][1][1:]
         return sentence
 
+
 def encode(storage_instance, corpus) -> list:
     num_corpus = []
     for sent in corpus:
@@ -112,8 +114,9 @@ def encode(storage_instance, corpus) -> list:
         num_corpus.append(sen_corpus)
     return num_corpus
 
+
 def split_by_sentence(text: str) -> list:
-            if not isinstance(text, str) or not text:
+        if not isinstance(text, str) or not text:
         return []
     text = text.lower()
     text = text.replace('\n', '')
