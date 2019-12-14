@@ -5,7 +5,7 @@ REFERENCE_TEXTS = []
 
 
 def clean_tokenize_corpus(texts: list) -> list:
-    pass
+    print('Hallo')
 
 
 class TfIdfCalculator:
